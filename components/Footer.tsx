@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { Phone, MapPin, Mail, ArrowUpRight } from "lucide-react";
+import { Phone, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2026;
 
   return (
     <footer className="bg-[#0B2520] text-[#F7F9F8] border-t border-[#14453D] font-sans">
@@ -121,7 +121,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-[#E2E8E5]/85">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C8A252] shrink-0 mt-0.5" />
-                <span> 104 Al Qasmi Building Naif Deira Dubai UAE.</span>
+                <span>104 Al Qasmi Building Naif Deira Dubai UAE.</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#C8A252] shrink-0" />
@@ -145,8 +145,7 @@ export default function Footer() {
           <p>© {currentYear} A G Ventures. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span>Wholesale & Distribution</span>
-            
-            <span> 104 Al Qasmi Building Naif Deira Dubai UAE.</span>
+            <span>104 Al Qasmi Building Naif Deira Dubai UAE.</span>
           </div>
         </div>
 
