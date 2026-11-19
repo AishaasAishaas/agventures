@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import {
   MapPin,
   Phone,
+  Mail,
   Clock,
   Send,
   CheckCircle2,
@@ -68,7 +69,7 @@ export default function ContactPage() {
                         Office Location
                       </h3>
                       <p className="text-sm text-[#52605C] mt-1">
-                         104 Al Qasmi Building Naif Deira Dubai UAE.
+                        104 Al Qasmi Building Naif Deira Dubai UAE.
                       </p>
                     </div>
                   </div>
@@ -90,6 +91,27 @@ export default function ContactPage() {
                       </a>
                       <p className="text-xs text-[#52605C]">
                         Available during business hours for trade inquiries
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Email Address */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-[#0B2520]">
+                        Email Address
+                      </h3>
+                      <a
+                        href="mailto:info@agvtrading.com"
+                        className="inline-block text-base font-bold text-[#0B2520] hover:text-amber-700 transition-colors mt-1 break-all"
+                      >
+                        info@agvtrading.com
+                      </a>
+                      <p className="text-xs text-[#52605C]">
+                        For wholesale catalogs, quotes & brand partnerships
                       </p>
                     </div>
                   </div>
@@ -152,6 +174,10 @@ export default function ContactPage() {
                       Thank you for contacting <strong>A G Ventures</strong>. Our wholesale desk will review your message shortly. For immediate assistance, please call{" "}
                       <a href="tel:+97143470618" className="font-bold text-[#0B2520] underline">
                         +97143470618
+                      </a>{" "}
+                      or email{" "}
+                      <a href="mailto:info@agvtrading.com" className="font-bold text-[#0B2520] underline">
+                        info@agvtrading.com
                       </a>.
                     </p>
                     <button
